@@ -1,0 +1,207 @@
+* {
+  --opacity-bg: 1;
+  --color-parrafo: #94A3B8;
+  --color-standar: #E2E8F0;
+  --color-apagado-navbar: #64748B;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: var(--color-standar) !important;
+}
+
+.color-parrafo {
+  color: var(--color-parrafo) !important;
+}
+
+.h-100 {
+  height: 100vh !important;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/InterTight-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Inter-Itali";
+  src: url(../fonts/InterTight-Italic-VariableFont_wght.ttf) format('truetype');
+}
+
+.gilroy-semibold {
+  font-family: "Gilroy-SemiBold", sans-serif;
+}
+
+.gilroy-regular {
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+.gilroy-medium {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.background-main {
+  background-color: rgb(15 23 42/var(--opacity-bg))
+}
+
+.background-btn {
+  background-color: #1f1e1e;
+  background: #1f1e1e;
+}
+
+.scale {
+  transform: scale(1);
+  transition: .15s all ease-in-out;
+}
+
+.scale:hover {
+  background-color: #1f1e1e;
+  background: #1f1e1e;
+  transform: scale(1.05);
+}
+
+.opaticy-hover {
+  opacity: 1;
+}
+
+.opacity-hover:hover {
+  opacity: 0.85;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.left-6rem {
+  padding-left: 6rem;
+}
+
+.right-6rem {
+  padding-right: 6rem;
+}
+
+.top-6rem {
+  padding-top: 6rem;
+}
+
+.bottom-6rem {
+  padding-bottom: 6rem;
+}
+
+.container-main {
+  padding: 0 7rem 0 7rem;
+}
+
+.color-off {
+  color: var(--color-apagado-navbar) !important;
+}
+
+.sobreMi {
+  cursor: pointer;
+}
+
+.sobreMi:hover .line {
+  width: 70px;
+  height: 1px;
+  background-color: var(--color-standar);
+}
+
+.sobreMi:hover .color-off {
+  color: var(--color-standar) !important;
+}
+
+.habilidades {
+  cursor: pointer;
+}
+
+.habilidades:hover .line {
+  width: 70px;
+  height: 1px;
+  background-color: var(--color-standar);
+}
+
+.habilidades:hover .color-off {
+  color: var(--color-standar) !important;
+}
+
+.proyectos {
+  cursor: pointer;
+}
+
+.proyectos:hover .line {
+  width: 70px;
+  height: 1px;
+  background-color: var(--color-standar);
+}
+
+.proyectos:hover .color-off {
+  color: var(--color-standar) !important;
+}
+
+.contacto {
+  cursor: pointer;
+}
+
+.contacto:hover .line {
+  width: 70px;
+  height: 1px;
+  background-color: var(--color-standar);
+}
+
+.contacto:hover .color-off {
+  color: var(--color-standar) !important;
+}
+
+.line {
+  width: 35px;
+  height: 1px;
+  background-color: var(--color-apagado-navbar);
+  transition: .16s all linear;
+}
+
+.line-active {
+  width: 70px;
+  height: 1px;
+  background-color: var(--color-standar);
+}
+
+.color-on {
+  color: var(--color-standar) !important;
+}
+
+.font-icons {
+  font-size: 1.5em;
+  color: var(--color-apagado-navbar) !important;
+}
+
+.no-select-text {
+  user-select: none;
+}
+
+.f-48 {
+  font-size: 48px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+
+.f-14 {
+  font-size: 14px;
+}
+
+.fw-parrafo {
+  font-weight: 500;
+}
