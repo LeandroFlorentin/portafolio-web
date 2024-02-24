@@ -1,6 +1,6 @@
 const Sobremi = ({ reference }) => {
   return (
-    <section ref={reference} id="sobre-mi" className="bottom-6rem top-6rem h-auto">
+    <section ref={reference} id="sobre-mi" className="bottom-6rem top-6rem h-100">
       <p className="color-parrafo fw-parrafo">
         A principios de 2022 decidí darle una oportunidad a la programación. Después de mucho estudio
         y completar cursos en CoderHouse y SoyHenry (que puedes ver en mi <a href="https://www.linkedin.com/in/leandro-florentin/" target="_blank">Linkedin</a>), aprendí los fundamentos del desarrollo Full Stack. Hoy en día, he tenido el privilegio
