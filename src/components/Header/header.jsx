@@ -6,7 +6,7 @@ const Header = ({ scrollToRef, sobreMiRef, habilidadesRef, proyectosRef, contact
       <section className='text-start'>
         <h1 className="fw-bold f-48">Florentín Leandro</h1>
         <h2 className="f-20">Desarrollador Full Stack</h2>
-        <p className="color-parrafo fw-parrafo">Construyo aplicaciones digitales escalables y atractivas</p>
+        <p className="color-parrafo fw-parrafo">Construyo aplicaciones digitales escalables y atractivas desde el punto de vista del diseño y la funcionalidad.</p>
         <div className="col-12 pt-5 pb-5">
           <NavBar scrollToRef={scrollToRef} sobreMiRef={sobreMiRef} habilidadesRef={habilidadesRef} proyectosRef={proyectosRef} contactosRef={contactosRef} />
         </div>
