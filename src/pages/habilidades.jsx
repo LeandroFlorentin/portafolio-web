@@ -18,27 +18,27 @@ const Habilidades = ({ reference }) => {
         <div className="tab-content no-select-text">
           <div className={`tab-pane ${activeTab === 'front-end' ? 'active' : ''}`}>
             <div className="d-flex height-container-badge flex-wrap mt-2">
-              {badgesFront.map((value, key) => (<div key={key} className="m-2"><Badge className="badge bg-custom p-2" description={value} /></div>))}
+              {badgesFront.map((value, key) => (<div key={key} className="m-2"><Badge className="badge bg-custom p-2 scale pointer" description={value} /></div>))}
             </div>
           </div>
           <div className={`tab-pane ${activeTab === 'back-end' ? 'active' : ''}`}>
             <div className="d-flex height-container-badge flex-wrap mt-2">
-              {badgesBack.map((value, key) => (<div key={key} className="m-2"><Badge className="badge bg-custom p-2" description={value} /></div>))}
+              {badgesBack.map((value, key) => (<div key={key} className="m-2"><Badge className="badge bg-custom p-2 scale pointer" description={value} /></div>))}
             </div>
           </div>
           <div className={`tab-pane ${activeTab === 'aws' ? 'active' : ''}`}>
             <div className="d-flex height-container-badge flex-wrap mt-2">
-              {badgesAws.map((value, key) => (<div key={key} className="m-2"><Badge className="badge bg-custom p-2" description={value} /></div>))}
+              {badgesAws.map((value, key) => (<div key={key} className="m-2"><Badge className="badge bg-custom p-2 scale pointer" description={value} /></div>))}
             </div>
           </div>
           <div className={`tab-pane ${activeTab === 'software' ? 'active' : ''}`}>
             <div className="d-flex height-container-badge flex-wrap mt-2">
-              {badgesSoftwate.map((value, key) => (<div key={key} className="m-2"><Badge className="badge bg-custom p-2" description={value} /></div>))}
+              {badgesSoftwate.map((value, key) => (<div key={key} className="m-2"><Badge className="badge bg-custom p-2 scale pointer" description={value} /></div>))}
             </div>
           </div>
           <div className={`tab-pane ${activeTab === 'metodologias' ? 'active' : ''}`}>
             <div className="d-flex height-container-badge flex-wrap mt-2">
-              {badgesMetodologias.map((value, key) => (<div key={key} className="m-2"><Badge className="badge bg-custom p-2" description={value} /></div>))}
+              {badgesMetodologias.map((value, key) => (<div key={key} className="m-2"><Badge className="badge bg-custom p-2 scale pointer" description={value} /></div>))}
             </div>
           </div>
         </div>

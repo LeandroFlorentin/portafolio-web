@@ -1,6 +1,7 @@
 * {
   --opacity-bg: 1;
   --color-parrafo: #94A3B8;
+  --color-subtitulo-proyecto: rgb(100 116 139/1);
   --color-standar: #E2E8F0;
   --color-apagado-navbar: #64748B;
   --verde-fluor-fuerte: rgb(94 234 212/1);
@@ -100,11 +101,11 @@ a {
 .sobreMi:hover .line {
   width: 70px;
   height: 1px;
-  background-color: var(--color-standar);
+  background-color: var(--verde-fluor-fuerte);
 }
 
 .sobreMi:hover .color-off {
-  color: var(--color-standar) !important;
+  color: var(--verde-fluor-fuerte) !important;
 }
 
 .habilidades {
@@ -114,11 +115,11 @@ a {
 .habilidades:hover .line {
   width: 70px;
   height: 1px;
-  background-color: var(--color-standar);
+  background-color: var(--verde-fluor-fuerte);
 }
 
 .habilidades:hover .color-off {
-  color: var(--color-standar) !important;
+  color: var(--verde-fluor-fuerte) !important;
 }
 
 .proyectos {
@@ -128,11 +129,11 @@ a {
 .proyectos:hover .line {
   width: 70px;
   height: 1px;
-  background-color: var(--color-standar);
+  background-color: var(--verde-fluor-fuerte);
 }
 
 .proyectos:hover .color-off {
-  color: var(--color-standar) !important;
+  color: var(--verde-fluor-fuerte) !important;
 }
 
 .contacto {
@@ -142,11 +143,11 @@ a {
 .contacto:hover .line {
   width: 70px;
   height: 1px;
-  background-color: var(--color-standar);
+  background-color: var(--verde-fluor-fuerte);
 }
 
 .contacto:hover .color-off {
-  color: var(--color-standar) !important;
+  color: var(--verde-fluor-fuerte) !important;
 }
 
 .line {
@@ -159,11 +160,11 @@ a {
 .line-active {
   width: 70px;
   height: 1px;
-  background-color: var(--color-standar);
+  background-color: var(--verde-fluor-fuerte);
 }
 
 .color-on {
-  color: var(--color-standar) !important;
+  color: var(--verde-fluor-fuerte) !important;
 }
 
 .font-icons {
@@ -183,9 +184,16 @@ a {
   font-size: 20px;
 }
 
+.f-16 {
+  font-size: 16px;
+}
 
 .f-14 {
   font-size: 14px;
+}
+
+.f-13 {
+  font-size: 13px;
 }
 
 .fw-parrafo {
@@ -220,9 +228,27 @@ a {
   border: 1px solid var(--verde-fluor-fuerte) !important;
 }
 
+.nav-link:hover {
+  border: 1px solid var(--verde-fluor-fuerte) !important;
+  background-color: var(--verde-fluor-transparent) !important;
+  color: var(--verde-fluor-fuerte) !important;
+}
+
+.color-hover {
+  transition: 250ms ease-in-out all;
+}
+
+.color-hover:hover {
+  color: var(--verde-fluor-fuerte) !important;
+}
+
 .height-container-badge {
   min-height: 100px;
   height: auto;
+}
+
+.color-subtitulo-proyecto {
+  color: var(--color-subtitulo-proyecto) !important;
 }
 
 @media only screen and (max-width: 550px) {

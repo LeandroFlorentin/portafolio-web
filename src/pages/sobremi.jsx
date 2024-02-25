@@ -3,7 +3,7 @@ const Sobremi = ({ reference }) => {
     <section ref={reference} id="sobre-mi" className="top-6rem h-auto">
       <p className="color-parrafo fw-parrafo">
         A principios de 2022 decidí darle una oportunidad a la programación. Después de mucho estudio
-        y completar cursos en CoderHouse y SoyHenry (que puedes ver en mi <a href="https://www.linkedin.com/in/leandro-florentin/" target="_blank">Linkedin</a>), aprendí los fundamentos del desarrollo Full Stack. Hoy en día, he tenido el privilegio
+        y completar cursos en CoderHouse y SoyHenry (que puedes ver en mi <a href="https://www.linkedin.com/in/leandro-florentin/" target="_blank" className="color-hover">Linkedin</a>), aprendí los fundamentos del desarrollo Full Stack. Hoy en día, he tenido el privilegio
         de crear software para una start-up de logística, donde puse en práctica todos mis conocimientos y también aprendí muchas herramientas nuevas
         y he mejorado considerablemente como profesional.
       </p>
