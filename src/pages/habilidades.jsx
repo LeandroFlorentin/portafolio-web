@@ -4,7 +4,7 @@ import Badge from "../components/Badge/Badge.jsx";
 const Habilidades = ({ reference }) => {
   const [activeTab, setActiveTab] = useState('front-end');
   let badgesFront = ["React.js", "JavaScript", "JQuery", "Redux", "Context", "Material UI", "Bootstrap", "Sass", "CSS3", "HTML5"];
-  let badgesBack = ["Node.js", "Express.js", "JavaScript", "TypeScript", "Sequelize", "PostgreSQL", "MySQL", "Firebase"];
+  let badgesBack = ["Node.js", "Express.js", "JavaScript", "TypeScript", "Sequelize", "PostgreSQL", "MySQL", "SQLite", "Firebase"];
   let badgesAws = ["EC2", "S3", "CloudFront"];
   let badgesSoftwate = ["Jenkins", "Git", "GitHub", "Bitbucket", "Visual Studio Code"];
   let badgesMetodologias = ["Scrum"]
