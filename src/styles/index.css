@@ -83,22 +83,6 @@ a {
   left: 0;
 }
 
-.left-6rem {
-  padding-left: 6rem;
-}
-
-.right-6rem {
-  padding-right: 6rem;
-}
-
-.top-6rem {
-  padding-top: 6rem;
-}
-
-.bottom-6rem {
-  padding-bottom: 6rem;
-}
-
 .container-main {
   padding: 0 7rem 0 7rem;
 }
@@ -204,4 +188,38 @@ a {
 
 .fw-parrafo {
   font-weight: 500;
+}
+
+.left-6rem {
+  padding-left: 6rem;
+}
+
+.right-6rem {
+  padding-right: 6rem;
+}
+
+.top-6rem {
+  padding-top: 6rem;
+}
+
+.bottom-6rem {
+  padding-bottom: 6rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .left-6rem {
+    padding-left: 2rem;
+  }
+
+  .right-6rem {
+    padding-right: 2rem;
+  }
+
+  .top-6rem {
+    padding-top: 2rem;
+  }
+
+  .bottom-6rem {
+    padding-bottom: 2rem;
+  }
 }

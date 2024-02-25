@@ -2,7 +2,7 @@ import NavBar from "../NavBar/NavBar.jsx";
 
 const Header = ({ scrollToRef, sobreMiRef, habilidadesRef, proyectosRef, contactosRef }) => {
   return (
-    <header className='h-100 row'>
+    <header className='h-auto row'>
       <section className='text-start'>
         <h1 className="fw-bold f-48">Florentín Leandro</h1>
         <h2 className="f-20">Desarrollador Full Stack</h2>
