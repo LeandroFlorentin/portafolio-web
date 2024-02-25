@@ -3,6 +3,8 @@
   --color-parrafo: #94A3B8;
   --color-standar: #E2E8F0;
   --color-apagado-navbar: #64748B;
+  --verde-fluor-fuerte: rgb(94 234 212/1);
+  --verde-fluor-transparent: rgba(45, 212, 191, .1);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -204,6 +206,23 @@ a {
 
 .bottom-6rem {
   padding-bottom: 6rem;
+}
+
+.active-custom {
+  color: var(--verde-fluor-fuerte) !important;
+  background-color: var(--verde-fluor-transparent) !important;
+  border: 1px solid var(--verde-fluor-fuerte) !important;
+}
+
+.bg-custom {
+  color: var(--verde-fluor-fuerte) !important;
+  background-color: var(--verde-fluor-transparent) !important;
+  border: 1px solid var(--verde-fluor-fuerte) !important;
+}
+
+.height-container-badge {
+  min-height: 100px;
+  height: auto;
 }
 
 @media only screen and (max-width: 550px) {
