@@ -1,8 +1,8 @@
-const CardProject = ({ fecha = "", children }) => {
+const CardProject = ({ fecha = "", children, className = "d-flex", classNameDescription = "color-subtitulo", classNameFecha = "col-4" }) => {
   return (
-    <div className="d-flex">
-      <div><p className="color-subtitulo-proyecto f-13">{fecha.toUpperCase()}</p></div>
-      <div className="ms-4">{children}</div>
+    <div className={className}>
+      <div className={classNameFecha}><p className="color-subtitulo-proyecto f-13">{fecha.toUpperCase()}</p></div>
+      <div className={classNameDescription}>{children}</div>
     </div>
   )
 }

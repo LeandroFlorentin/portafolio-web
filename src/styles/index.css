@@ -225,7 +225,13 @@ a {
 .bg-custom {
   color: var(--verde-fluor-fuerte) !important;
   background-color: var(--verde-fluor-transparent) !important;
-  border: 1px solid var(--verde-fluor-fuerte) !important;
+}
+
+.padding-badge {
+  padding-top: .50rem;
+  padding-bottom: .50rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
 }
 
 .nav-link:hover {
@@ -249,6 +255,16 @@ a {
 
 .color-subtitulo-proyecto {
   color: var(--color-subtitulo-proyecto) !important;
+}
+
+.hover-card {
+  border: 1px solid transparent;
+  transition: .3s all ease;
+}
+
+.hover-card:hover {
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  background-color: rgba(255, 255, 255, 0.055);
 }
 
 @media only screen and (max-width: 550px) {
