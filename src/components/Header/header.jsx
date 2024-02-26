@@ -18,7 +18,7 @@ const Header = ({ scrollToRef, sobreMiRef, habilidadesRef, proyectosRef, contact
             <i className="bi bi-github font-icons pointer me-4"></i>
           </a>
           <span className="d-inline-block" tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
-            <a href="./Florentin_Leandro.pdf" download>
+            <a href="./CV Leandro Florentin Full Stack Developer 2024.pdf" download>
               <i className="bi bi-filetype-pdf font-icons pointer"></i>
             </a>
           </span>
