@@ -122,17 +122,17 @@ a {
   color: var(--verde-fluor-fuerte) !important;
 }
 
-.proyectos {
+.experiencia {
   cursor: pointer;
 }
 
-.proyectos:hover .line {
+.experiencia:hover .line {
   width: 70px;
   height: 1px;
   background-color: var(--verde-fluor-fuerte);
 }
 
-.proyectos:hover .color-off {
+.experiencia:hover .color-off {
   color: var(--verde-fluor-fuerte) !important;
 }
 

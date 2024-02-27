@@ -1,6 +1,6 @@
 import NavBar from "../NavBar/NavBar.jsx";
 
-const Header = ({ scrollToRef, sobreMiRef, habilidadesRef, proyectosRef, contactosRef }) => {
+const Header = ({ scrollToRef, sobreMiRef, habilidadesRef, experienciaRef, contactosRef }) => {
   return (
     <header className='h-auto row'>
       <section className='text-start'>
@@ -8,7 +8,7 @@ const Header = ({ scrollToRef, sobreMiRef, habilidadesRef, proyectosRef, contact
         <h2 className="f-20">Desarrollador Full Stack</h2>
         <p className="color-parrafo fw-parrafo">Construyo aplicaciones digitales escalables y atractivas desde el punto de vista del diseño y la funcionalidad.</p>
         <div className="col-12 pt-5 pb-5">
-          <NavBar scrollToRef={scrollToRef} sobreMiRef={sobreMiRef} habilidadesRef={habilidadesRef} proyectosRef={proyectosRef} contactosRef={contactosRef} />
+          <NavBar scrollToRef={scrollToRef} sobreMiRef={sobreMiRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} />
         </div>
         <section className="pt-3">
           <a href="https://www.linkedin.com/in/leandro-florentin/">

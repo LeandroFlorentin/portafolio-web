@@ -1,16 +1,16 @@
 import { useState } from "react";
-const NavBar = ({ scrollToRef, sobreMiRef, habilidadesRef, proyectosRef, contactosRef }) => {
+const NavBar = ({ scrollToRef, sobreMiRef, habilidadesRef, experienciaRef, contactosRef }) => {
   const [seteo, setSeteo] = useState({
     "sobre mi": true,
     habilidades: false,
-    proyectos: false,
+    experiencia: false,
     contacto: false
   })
   function tipoScroll(description) {
     switch (description) {
       case "sobre mi": return scrollToRef(sobreMiRef);
       case "habilidades": return scrollToRef(habilidadesRef);
-      case "proyectos": return scrollToRef(proyectosRef);
+      case "experiencia": return scrollToRef(experienciaRef);
       case "contacto": return scrollToRef(contactosRef);
       default: return "";
     }
@@ -27,7 +27,7 @@ const NavBar = ({ scrollToRef, sobreMiRef, habilidadesRef, proyectosRef, contact
   let array = [
     { descripcion: "sobre mi", className: "sobreMi d-flex align-items-center pt-3" },
     { descripcion: "habilidades", className: "habilidades d-flex align-items-center pt-3" },
-    { descripcion: "proyectos", className: "proyectos d-flex align-items-center pt-3" },
+    { descripcion: "experiencia", className: "experiencia d-flex align-items-center pt-3" },
     { descripcion: "contacto", className: "contacto d-flex align-items-center pt-3" }
   ]
   return (

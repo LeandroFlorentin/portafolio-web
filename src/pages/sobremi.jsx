@@ -1,11 +1,10 @@
 const Sobremi = ({ reference }) => {
   return (
     <section ref={reference} id="sobre-mi" className="top-6rem h-auto">
+      <h5 className="fw-bold no-select-text">Sobre mi</h5>
       <p className="color-parrafo fw-parrafo">
-        A principios de 2022 decidí darle una oportunidad a la programación. Después de mucho estudio
-        y completar cursos en CoderHouse y SoyHenry (que puedes ver en mi <a href="https://www.linkedin.com/in/leandro-florentin/" target="_blank" className="color-hover">Linkedin</a>), aprendí los fundamentos del desarrollo Full Stack. Hoy en día, he tenido el privilegio
-        de crear software para una start-up de logística, donde puse en práctica todos mis conocimientos y también aprendí muchas herramientas nuevas
-        y he mejorado considerablemente como profesional.
+        A principios de 2022, comencé mi viaje en programación y completé cursos en CoderHouse y SoyHenry (que puede ver en mi <a href="https://www.linkedin.com/in/leandro-florentin/" target="_blank">Linkedin</a>), fortaleciendo mis habilidades
+        en desarrollo Full Stack. Actualmente, aplico mis conocimientos en una start-up de logística.
       </p>
       <hr />
       <p className="color-parrafo fw-parrafo">

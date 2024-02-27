@@ -17,28 +17,28 @@ const Habilidades = ({ reference }) => {
       <Tab tabs={tabs} active={activeTab}>
         <div className="tab-content no-select-text">
           <div className={`tab-pane ${activeTab === 'front-end' ? 'active' : ''}`}>
-            <div className="d-flex height-container-badge flex-wrap mt-2">
-              {badgesFront.map((value, key) => (<div key={key} className="m-2"><Badge className="badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
+            <div className="d-flex height-container-badge flex-wrap gap-2 pt-3">
+              {badgesFront.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
             </div>
           </div>
           <div className={`tab-pane ${activeTab === 'back-end' ? 'active' : ''}`}>
-            <div className="d-flex height-container-badge flex-wrap mt-2">
-              {badgesBack.map((value, key) => (<div key={key} className="m-2"><Badge className="badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
+            <div className="d-flex height-container-badge flex-wrap gap-2 pt-3">
+              {badgesBack.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
             </div>
           </div>
           <div className={`tab-pane ${activeTab === 'aws' ? 'active' : ''}`}>
-            <div className="d-flex height-container-badge flex-wrap mt-2">
-              {badgesAws.map((value, key) => (<div key={key} className="m-2"><Badge className="badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
+            <div className="d-flex height-container-badge flex-wrap gap-2 pt-3">
+              {badgesAws.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
             </div>
           </div>
           <div className={`tab-pane ${activeTab === 'software' ? 'active' : ''}`}>
-            <div className="d-flex height-container-badge flex-wrap mt-2">
-              {badgesSoftwate.map((value, key) => (<div key={key} className="m-2"><Badge className="badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
+            <div className="d-flex height-container-badge flex-wrap gap-2 pt-3">
+              {badgesSoftwate.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
             </div>
           </div>
           <div className={`tab-pane ${activeTab === 'metodologias' ? 'active' : ''}`}>
-            <div className="d-flex height-container-badge flex-wrap mt-2">
-              {badgesMetodologias.map((value, key) => (<div key={key} className="m-2"><Badge className="badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
+            <div className="d-flex height-container-badge flex-wrap gap-2 pt-3">
+              {badgesMetodologias.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
             </div>
           </div>
         </div>
