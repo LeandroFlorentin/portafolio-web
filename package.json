@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.1.0",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.11.3",
+    "notiflix": "^3.2.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.50.1",
     "react-responsive": "^9.0.2"
   },
   "devDependencies": {

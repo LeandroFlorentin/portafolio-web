@@ -1,7 +1,7 @@
 const Sobremi = ({ reference }) => {
   return (
     <section ref={reference} id="sobre-mi" className="top-6rem h-auto">
-      <h5 className="fw-bold no-select-text">Sobre mi</h5>
+      <h5 className="fw-bold no-select-text color-on">Sobre mi</h5>
       <p className="color-parrafo fw-parrafo">
         A principios de 2022, comencé mi viaje en programación y completé cursos en CoderHouse y SoyHenry (que puede ver en mi <a href="https://www.linkedin.com/in/leandro-florentin/" target="_blank">Linkedin</a>), fortaleciendo mis habilidades
         en desarrollo Full Stack. Actualmente, aplico mis conocimientos en una start-up de logística.

@@ -222,6 +222,28 @@ a {
   border: 1px solid var(--verde-fluor-fuerte) !important;
 }
 
+.h-1px {
+  height: 1px;
+}
+
+.active-custom:active {
+  color: var(--verde-fluor-fuerte) !important;
+  background-color: var(--verde-fluor-transparent) !important;
+  border: 1px solid var(--verde-fluor-fuerte) !important;
+}
+
+.btn-custom {
+  color: var(--verde-fluor-fuerte) !important;
+  background-color: var(--verde-fluor-transparent) !important;
+  border: 1px solid var(--verde-fluor-fuerte) !important;
+  opacity: .7;
+  transition: .5s all ease-in-out;
+}
+
+.btn-custom:hover {
+  opacity: 1;
+}
+
 .bg-custom {
   color: var(--verde-fluor-fuerte) !important;
   background-color: var(--verde-fluor-transparent) !important;
@@ -265,6 +287,10 @@ a {
 .hover-card:hover {
   border: 1px solid rgba(255, 255, 255, 0.055);
   background-color: rgba(255, 255, 255, 0.055);
+}
+
+.color-input {
+  color: black !important;
 }
 
 @media only screen and (max-width: 550px) {
