@@ -1,47 +1,21 @@
-import { useState } from "react";
-const NavBar = ({ scrollToRef, sobreMiRef, habilidadesRef, experienciaRef, contactosRef }) => {
-  const [seteo, setSeteo] = useState({
-    "sobre mi": true,
-    habilidades: false,
-    experiencia: false,
-    contacto: false
-  })
-  function tipoScroll(description) {
-    switch (description) {
-      case "sobre mi": return scrollToRef(sobreMiRef);
-      case "habilidades": return scrollToRef(habilidadesRef);
-      case "experiencia": return scrollToRef(experienciaRef);
-      case "contacto": return scrollToRef(contactosRef);
-      default: return "";
-    }
-  }
-  function cambiarSeteo(description) {
-    tipoScroll(description);
-    let objeto = { ...seteo };
-    for (let key in objeto) {
-      if (key === description) objeto[key] = true;
-      else objeto[key] = false;
-    }
-    setSeteo(objeto);
-  }
+function NavBar({ scrollToRef, sobreMiRef, habilidadesRef, experienciaRef, contactosRef, activate, setActivate }) {
   let array = [
-    { descripcion: "sobre mi", className: "sobreMi d-flex align-items-center pt-3" },
-    { descripcion: "habilidades", className: "habilidades d-flex align-items-center pt-3" },
-    { descripcion: "experiencia", className: "experiencia d-flex align-items-center pt-3" },
-    { descripcion: "contacto", className: "contacto d-flex align-items-center pt-3" }
-  ]
+    { descripcion: "sobre mi", valor: "sobreMi", className: "sobreMi d-flex align-items-center pt-3 w-200px" },
+    { descripcion: "habilidades", valor: "habilidades", className: "habilidades d-flex align-items-center pt-3 w-200px" },
+    { descripcion: "experiencia", valor: "experiencia", className: "experiencia d-flex align-items-center pt-3 w-200px" },
+    { descripcion: "contacto", valor: "contactos", className: "contacto d-flex align-items-center pt-3 w-200px" }
+  ];
   return (
     <nav className='text-start'>
-      {
-        array.map((value, key) => (
-          <div key={key} className={value.className} onClick={() => cambiarSeteo(value.descripcion)}>
-            <span className={seteo[value.descripcion] ? "line-active me-4 no-select-text" : 'line me-4 no-select-text'}></span>
-            <a className={seteo[value.descripcion] ? "color-on f-14 fw-bold text-uppercase no-select-text" : 'color-off f-14 fw-bold text-uppercase no-select-text'}>{value.descripcion}</a>
-          </div>
-        ))
-      }
+      {array.map((value, key) => (
+        <div key={key} className={value.className} onClick={() => scrollToRef(eval(value.valor + "Ref"))}>
+          <span className={value.descripcion === activate ? "line-active me-4 no-select-text" : 'line me-4 no-select-text'}></span>
+          <a className={value.descripcion === activate ? "color-on f-14 fw-bold text-uppercase no-select-text" : 'color-off f-14 fw-bold text-uppercase no-select-text'}>{value.descripcion}</a>
+        </div>
+      ))}
     </nav>
-  )
+  );
 }
 
 export default NavBar;
+

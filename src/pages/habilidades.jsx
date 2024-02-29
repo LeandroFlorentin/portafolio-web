@@ -13,7 +13,7 @@ const Habilidades = ({ reference }) => {
     setActiveTab(tabName);
   };
   return (
-    <section ref={reference} id="habilidades" className="h-auto top-6rem">
+    <section ref={reference} id="habilidades" className="h-auto pt-5">
       <Tab tabs={tabs} active={activeTab}>
         <div className="tab-content no-select-text">
           <div className={`tab-pane ${activeTab === 'front-end' ? 'active' : ''}`}>

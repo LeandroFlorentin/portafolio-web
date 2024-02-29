@@ -3,7 +3,7 @@ import Badge from "../components/Badge/Badge.jsx"
 const Proyectos = ({ reference }) => {
   let badgeProyectFlexit = ["JavaScript", "TypeScript", "React", "Node.js", "Express.js", "SQLite", "PostgreSQL", "Swagger", "EC2", "S3", "CloudFront", "Jenkins", "HTML5", "CSS3", "Sass"]
   return (
-    <section ref={reference} id="proyectos" className="h-auto top-6rem">
+    <section ref={reference} id="proyectos" className="h-auto pt-5">
       <CardProject fecha="03-23  —  Actualidad" className="row pointer hover-card rounded no-select-text" classNameDescription="col-12 pb-3 ps-3 pe-3" classNameFecha="pt-3 ps-3 pe-3 col-12 text-start fw-parrafo">
         <div className="text-start">
           <h3 className="f-16 no-select-text">Desarrollador Full Stack - Flexit</h3>

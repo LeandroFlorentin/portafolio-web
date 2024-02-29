@@ -1,18 +1,19 @@
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import Notiflix from "notiflix";
 const Contacto = ({ reference }) => {
-  const { formState: { errors }, handleSubmit, register, setValue } = useForm({
+  const formRef = useRef(null);
+  const { formState: { errors }, handleSubmit, register, setValue, getValues } = useForm({
     defaultValues: {
       email: "",
       nombre: "",
       mensaje: ""
     }
   })
-  function onSubmit(e) {
-    emailjs.sendForm("service_ktd8uku", "template_jirmkfp", e, "1EkX72i3uLvtYWoR3")
-      .then(res => {
-        console.log(res)
+  function onSubmit() {
+    try {
+      emailjs.sendForm("service_ktd8uku", "template_jirmkfp", formRef.current, "1EkX72i3uLvtYWoR3").then(res => {
         setValue("email", "");
         setValue("nombre", "");
         setValue("mensaje", "");
@@ -20,16 +21,17 @@ const Contacto = ({ reference }) => {
           position: 'right-bottom',
         })
       })
-      .catch(err => {
-        console.log(err)
-        throw err;
-      })
+    } catch (error) {
+      console.log("error", error)
+      Notiflix.Notify.failure("Error al enviar email")
+      throw error;
+    }
   }
   return (
-    <section ref={reference} id="contactos" className="h-auto bottom-6rem pt-4">
+    <section ref={reference} id="contactos" className="h-auto bottom-6rem pt-5">
       <h5 className="fw-bold color-on no-select-text">Contactame!</h5>
       <p className="color-parrafo fw-parrafo no-select-text">Lo invito que ante cualquier pregunta o solicitud no dude en utilizar el formulario, estoy abierto a cualquier tipo de propuesta.</p>
-      <form className="form row" onSubmit={handleSubmit(onSubmit)}>
+      <form ref={formRef} className="form row" onSubmit={handleSubmit(onSubmit)}>
         <div className="col-12 col-md-6">
           <label htmlFor="nombre" className="d-block color-on fw-bold no-select-text">Nombre</label>
           <input className="w-100 ps-2 pe-2 active-custom form-control" type="text" name="nombre"  {...register("nombre", { required: true })} />
