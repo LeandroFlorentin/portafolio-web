@@ -6,8 +6,13 @@ const Proyectos = ({ reference }) => {
     <section ref={reference} id="proyectos" className="h-auto pt-5">
       <CardProject fecha="03-23  —  Actualidad" className="row pointer hover-card rounded no-select-text" classNameDescription="col-12 pb-3 ps-3 pe-3" classNameFecha="pt-3 ps-3 pe-3 col-12 text-start fw-parrafo">
         <div className="text-start">
-          <h3 className="f-16 no-select-text">Desarrollador Full Stack - Flexit</h3>
-          <h3 className="color-subtitulo-proyecto no-select-text f-16">Proyecto laboral</h3>
+          <div className="d-flex justify-content-between align-items-start">
+            <div>
+              <h3 className="f-16 no-select-text">Desarrollador Full Stack - Flexit</h3>
+              <h3 className="color-subtitulo-proyecto no-select-text f-16">Proyecto laboral</h3>
+            </div>
+            {/*             <a href="https://www.loom.com/share/983bb265723740b8b4f75fd8eeb2dbf1" target="_blank" className="btn btn-sm btn-custom color-on no-select-text f-16">Demo</a> */}
+          </div>
           <p className="f-14 color-parrafo no-select-text">
             Me encargo del desarrollo y mantenimiento integral de aplicaciones, enfocándome en React para el front-end y utilizando Node.js
             tanto en JavaScript como en TypeScript para crear microservicios y APIs en el back-end. En cuanto a las bases de datos, estoy

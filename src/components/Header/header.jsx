@@ -4,10 +4,10 @@ const Header = ({ scrollToRef, sobreMiRef, habilidadesRef, experienciaRef, conta
   return (
     <header className='h-auto row'>
       <section className='text-start'>
-        <h1 className="fw-bold f-48">Florentín Leandro</h1>
+        <h1 className="fw-bold f-48">Florentín, Leandro</h1>
         <h2 className="f-20">Desarrollador Full Stack</h2>
         <p className="color-parrafo fw-parrafo">Construyo aplicaciones digitales escalables y atractivas desde el punto de vista del diseño y la funcionalidad.</p>
-        <div className="col-12 pt-5 pb-5">
+        <div className="col-12 pt-5 pb-5 d-lg-block d-none">
           <NavBar activate={activate} setActivate={setActivate} scrollToRef={scrollToRef} sobreMiRef={sobreMiRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} />
         </div>
         <section className="pt-3">

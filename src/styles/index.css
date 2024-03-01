@@ -196,6 +196,10 @@ a {
   font-size: 14px;
 }
 
+.f-navbar {
+  font-size: .7em;
+}
+
 .f-13 {
   font-size: 13px;
 }
@@ -283,6 +287,14 @@ a {
   color: var(--color-subtitulo-proyecto) !important;
 }
 
+.color-subtitulo-proyecto-demo {
+  color: var(--color-subtitulo-proyecto) !important;
+}
+
+.color-subtitulo-proyecto-demo:hover {
+  color: white;
+}
+
 .hover-card {
   border: 1px solid transparent;
   transition: .3s all ease;
@@ -312,6 +324,10 @@ a {
 }
 
 @media only screen and (max-width: 550px) {
+  .f-navbar {
+    font-size: .5em;
+  }
+
   .left-6rem {
     padding-left: 2rem;
   }

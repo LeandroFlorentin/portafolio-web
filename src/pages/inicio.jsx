@@ -4,6 +4,7 @@ import Habilidades from "./habilidades.jsx";
 import Experiencia from "./experiencia.jsx";
 import Sobremi from './sobremi.jsx';
 import Header from '../components/Header/header.jsx';
+import NavBarCelu from "../components/NavBarCelu/NavBarCelu.jsx";
 import { useMediaQuery } from "react-responsive";
 
 function Inicio() {
@@ -45,6 +46,7 @@ function Inicio() {
 
   return (
     <div className='background-main g-0'>
+      <div className='d-block d-lg-none sticky-top'><NavBarCelu activate={activeSection} scrollToRef={scrollToRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} sobreMiRef={sobreMiRef} /></div>
       <div className='left-6rem right-6rem row m-0 d-flex'>
         <div className='top-6rem bottom-6rem col-5 d-lg-block d-none  h-100 navbar-sticky container-header'>
           <Header activate={activeSection} setActivate={setActiveSection} scrollToRef={scrollToRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} sobreMiRef={sobreMiRef} />
