@@ -16,28 +16,28 @@ const Habilidades = ({ reference }) => {
     <section ref={reference} id="habilidades" className="h-auto pt-5">
       <div className="tab-content no-select-text">
         <div className="p-2">
-          <h5>Front-End</h5>
+          <h5 className="f-20">Front-End</h5>
           <div className="d-flex flex-wrap gap-2 mt-3">
             {badgesFront.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
           </div>
         </div>
         <hr />
         <div className="p-2">
-          <h5>Back-End</h5>
+          <h5 className="f-20">Back-End</h5>
           <div className="d-flex flex-wrap gap-2 mt-3">
             {badgesBack.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
           </div>
         </div>
         <hr />
         <div className="p-2">
-          <h5>AWS</h5>
+          <h5 className="f-20">AWS</h5>
           <div className="d-flex flex-wrap gap-2 mt-3 ">
             {badgesAws.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
           </div>
         </div>
         <hr />
         <div className="p-2" >
-          <h5>Software</h5>
+          <h5 className="f-20">Software</h5>
           <div className="d-flex flex-wrap gap-2 mt-3">
             {badgesSoftwate.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
           </div>

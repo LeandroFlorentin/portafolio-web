@@ -4,6 +4,7 @@ const Proyectos = ({ reference }) => {
   let badgeProyectFlexit = ["JavaScript", "TypeScript", "React", "Node.js", "Express.js", "SQLite", "PostgreSQL", "Swagger", "EC2", "S3", "CloudFront", "Jenkins", "HTML5", "CSS3", "Sass"]
   return (
     <section ref={reference} id="proyectos" className="h-auto pt-5">
+      <h4 className="f-20">Experiencia</h4>
       <CardProject fecha="03-23  —  Actualidad" className="row pointer hover-card rounded no-select-text" classNameDescription="col-12 pb-3 ps-3 pe-3" classNameFecha="pt-3 ps-3 pe-3 col-12 text-start fw-parrafo">
         <div className="text-start">
           <div className="d-flex justify-content-between align-items-start">

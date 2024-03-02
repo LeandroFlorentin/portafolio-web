@@ -11,10 +11,10 @@ const Header = ({ scrollToRef, sobreMiRef, habilidadesRef, experienciaRef, conta
           <NavBar activate={activate} setActivate={setActivate} scrollToRef={scrollToRef} sobreMiRef={sobreMiRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} />
         </div>
         <section className="pt-3">
-          <a href="https://www.linkedin.com/in/leandro-florentin/">
+          <a href="https://www.linkedin.com/in/leandro-florentin/" target="_blank">
             <i className="bi bi-linkedin font-icons pointer me-4"></i>
           </a>
-          <a href="https://github.com/LeandroFlorentin">
+          <a href="https://github.com/LeandroFlorentin" target="_blank">
             <i className="bi bi-github font-icons pointer me-4"></i>
           </a>
           <span className="d-inline-block" tabIndex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">

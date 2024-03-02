@@ -9,6 +9,7 @@ import { useMediaQuery } from "react-responsive";
 
 function Inicio() {
   const media = useMediaQuery({ query: "(min-width:769px)" });
+  const mediaLg = useMediaQuery({ query: "(min-width:1440px)" })
   const sobreMiRef = useRef(null);
   const habilidadesRef = useRef(null);
   const experienciaRef = useRef(null);
@@ -28,15 +29,25 @@ function Inicio() {
       const habilidadesOffset = habilidadesRef.current.offsetTop;
       const experienciaOffset = experienciaRef.current.offsetTop;
       const contactosOffset = contactosRef.current.offsetTop;
-      if (scrollPosition < habilidadesOffset) {
-        setActiveSection('sobre mi');
-      } else if (scrollPosition < experienciaOffset) {
-        setActiveSection('habilidades');
-      } else if (scrollPosition < contactosOffset) {
-        setActiveSection('experiencia');
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.clientHeight;
+      const bottomScrollPosition = scrollTop + windowHeight;
+      let activeSection = '';
+      if (scrollTop === 0 || bottomScrollPosition === documentHeight) {
+        activeSection = scrollTop === 0 ? 'sobre mi' : 'contacto';
       } else {
-        setActiveSection('contacto');
+        if (scrollPosition < habilidadesOffset) {
+          activeSection = 'sobre mi';
+        } else if (scrollPosition < experienciaOffset) {
+          activeSection = 'habilidades';
+        } else if (scrollPosition < contactosOffset) {
+          activeSection = 'experiencia';
+        } else {
+          activeSection = 'contacto';
+        }
       }
+      setActiveSection(activeSection);
     };
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -55,10 +66,18 @@ function Inicio() {
           <Header activate={activeSection} setActivate={setActiveSection} scrollToRef={scrollToRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} sobreMiRef={sobreMiRef} />
         </div>
         <main className={`${media ? "left-6rem" : ""} col-lg-7 col-12 col-md-12`}>
-          <Sobremi reference={sobreMiRef} />
-          <Habilidades reference={habilidadesRef} />
-          <Experiencia reference={experienciaRef} />
-          <Contacto reference={contactosRef} />
+          <div className={mediaLg ? "pt-5" : ""}>
+            <Sobremi reference={sobreMiRef} />
+          </div>
+          <div className={mediaLg ? "pt-5" : ""}>
+            <Habilidades reference={habilidadesRef} />
+          </div>
+          <div className={mediaLg ? "pt-5" : ""}>
+            <Experiencia reference={experienciaRef} />
+          </div>
+          <div className={mediaLg ? "pt-5" : ""}>
+            <Contacto reference={contactosRef} />
+          </div>
         </main>
       </div>
     </div >

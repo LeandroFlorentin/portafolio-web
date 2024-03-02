@@ -4,8 +4,8 @@
   --color-subtitulo-proyecto: rgb(100 116 139/1);
   --color-standar: #E2E8F0;
   --color-apagado-navbar: #64748B;
-  --verde-fluor-fuerte: rgb(94 234 212/1);
-  --verde-fluor-transparent: rgba(45, 212, 191, .1);
+  --verde-fluor-fuerte: #5eead4;
+  --verde-fluor-transparent: #2dd4bf1a;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -309,6 +309,36 @@ a {
   color: black !important;
 }
 
+.btn-transparent {
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.btn-transparent:hover {
+  background: transparent;
+  border: 1px solid transparent;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-transparent:active {
+  background: transparent;
+  border: 1px solid transparent;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-transparent:focus {
+  background: transparent;
+  border: 1px solid transparent;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.direction {
+  right: 0;
+}
+
 .content {
   position: absolute;
   top: 0;
@@ -321,6 +351,11 @@ a {
   justify-content: center;
   align-items: center;
   z-index: 1;
+}
+
+.text-area {
+  resize: none;
+  height: 150px;
 }
 
 @media only screen and (max-width: 550px) {
