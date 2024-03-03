@@ -1,7 +1,7 @@
 import CardProject from "../components/Card-Project/CardProject.jsx";
 import Badge from "../components/Badge/Badge.jsx"
 const Proyectos = ({ reference }) => {
-  let badgeProyectFlexit = ["JavaScript", "TypeScript", "React", "Node.js", "Express.js", "SQLite", "PostgreSQL", "Swagger", "EC2", "S3", "CloudFront", "Jenkins", "HTML5", "CSS3", "Sass"]
+  let badgeProyectFlexit = ["JavaScript", "TypeScript", "React", "Node.js", "Express.js", "Sequelize", "SQLite", "PostgreSQL", "Swagger", "EC2", "S3", "CloudFront", "Jenkins", "Bootstrap", "HTML5", "CSS3", "Sass"]
   return (
     <section ref={reference} id="proyectos" className="h-auto pt-5">
       <h4 className="f-20">Experiencia</h4>
