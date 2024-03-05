@@ -19,11 +19,11 @@ const Contacto = ({ reference }) => {
   })
   function onSubmit() {
     try {
-      /*       emailjs.sendForm("service_ktd8uku", "template_jirmkfp", formRef.current, "1EkX72i3uLvtYWoR3").then(res => {
-              setValue("email", "");
-              setValue("nombre", "");
-              setValue("mensaje", "");
-            }) */
+      emailjs.sendForm("service_ktd8uku", "template_jirmkfp", formRef.current, "1EkX72i3uLvtYWoR3").then(res => {
+        setValue("email", "");
+        setValue("nombre", "");
+        setValue("mensaje", "");
+      })
       Notiflix.Notify.success('Enviado con exito.', {
         position: 'right-bottom'
       })
