@@ -1,3 +1,4 @@
+import { Zoom } from "react-awesome-reveal";
 function NavBar({ scrollToRef, sobreMiRef, habilidadesRef, experienciaRef, contactosRef, activate, setActivate }) {
   let array = [
     { descripcion: "sobre mi", valor: "sobreMi", className: "sobreMi d-flex align-items-center pt-3 w-200px" },
@@ -8,12 +9,15 @@ function NavBar({ scrollToRef, sobreMiRef, habilidadesRef, experienciaRef, conta
   return (
     <nav className='text-start'>
       {array.map((value, key) => (
-        <div key={key} className={value.className} onClick={() => scrollToRef(eval(value.valor + "Ref"))}>
-          <span className={value.descripcion === activate ? "line-active me-4 no-select-text" : 'line me-4 no-select-text'}></span>
-          <a className={value.descripcion === activate ? "color-on f-14 fw-bold text-uppercase no-select-text" : 'color-off f-14 fw-bold text-uppercase no-select-text'}>{value.descripcion}</a>
-        </div>
-      ))}
-    </nav>
+        <Zoom delay={150 * key} key={key}>
+          <div className={value.className} onClick={() => scrollToRef(eval(value.valor + "Ref"))}>
+            <span className={value.descripcion === activate ? "line-active me-4 no-select-text" : 'line me-4 no-select-text'}></span>
+            <a className={value.descripcion === activate ? "color-on f-14 fw-bold text-uppercase no-select-text" : 'color-off f-14 fw-bold text-uppercase no-select-text'}>{value.descripcion}</a>
+          </div>
+        </Zoom>
+      ))
+      }
+    </nav >
   );
 }
 

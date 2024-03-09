@@ -61,31 +61,29 @@ function Inicio() {
       <div className='d-block d-lg-none sticky-top'><NavBarCelu activate={activeSection} scrollToRef={scrollToRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} sobreMiRef={sobreMiRef} /></div>
       <div className='left-6rem right-6rem row m-0 d-flex'>
         <div className='top-6rem bottom-6rem col-5 d-lg-block d-none  h-100 navbar-sticky container-header'>
-          <Slide direction='left' damping={1}>
-            <Header activate={activeSection} setActivate={setActiveSection} scrollToRef={scrollToRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} sobreMiRef={sobreMiRef} />
-          </Slide>
+          <Header activate={activeSection} setActivate={setActiveSection} scrollToRef={scrollToRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} sobreMiRef={sobreMiRef} />
         </div>
         <div className='top-6rem col-12 d-block d-lg-none h-auto container-header'>
           <Header activate={activeSection} setActivate={setActiveSection} scrollToRef={scrollToRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} sobreMiRef={sobreMiRef} />
         </div>
         <main className={`${media ? "left-6rem" : ""} col-lg-7 col-12 col-md-12`}>
           <div className={!mediaLg ? "pt-5" : ""}>
-            <Fade delay={150}>
+            <Fade delay={200}>
               <Sobremi reference={sobreMiRef} />
             </Fade>
           </div>
           <div className={mediaLg ? "pt-5" : ""}>
-            <Fade delay={150}>
+            <Fade delay={200}>
               <Habilidades reference={habilidadesRef} />
             </Fade>
           </div>
           <div className={mediaLg ? "pt-5" : ""}>
-            <Fade delay={150}>
+            <Fade delay={200}>
               <Experiencia reference={experienciaRef} />
             </Fade>
           </div>
           <div className={mediaLg ? "pt-5" : ""}>
-            <Fade delay={150}>
+            <Fade delay={200}>
               <Contacto reference={contactosRef} />
             </Fade>
           </div>

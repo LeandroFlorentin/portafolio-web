@@ -48,8 +48,8 @@ const Contacto = ({ reference }) => {
       <h5 className="fw-bold color-on no-select-text f-20">Contactame!</h5>
       <hr />
       <div className="p-2">
-        <h5 className="f-16"><i classname="bi bi-person-fill color-on me-2"></i>Florentín Leandro.</h5>
-        <h5 className="f-16 pt-1"><i classname="bi bi-house-fill color-on me-2"></i>Argentina, Buenos Aires, Quilmes.</h5>
+        <h5 className="f-16"><i className="bi bi-person-fill color-on me-2"></i>Florentín Leandro.</h5>
+        <h5 className="f-16 pt-1"><i className="bi bi-house-fill color-on me-2"></i>Argentina, Buenos Aires, Quilmes.</h5>
         <div className="d-flex position-relative pt-1">
           <input
             id="inputField"

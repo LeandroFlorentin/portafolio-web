@@ -1,5 +1,6 @@
 import CardProject from "../components/Card-Project/CardProject.jsx";
 import Badge from "../components/Badge/Badge.jsx"
+import { Fade } from "react-awesome-reveal";
 const Proyectos = ({ reference }) => {
   let badgeProyectFlexit = ["JavaScript", "TypeScript", "React", "Node.js", "Express.js", "Sequelize", "SQLite", "PostgreSQL", "Swagger", "EC2", "S3", "CloudFront", "Jenkins", "Bootstrap", "HTML5", "CSS3", "Sass"]
   return (
@@ -22,7 +23,7 @@ const Proyectos = ({ reference }) => {
             implementación ágil y consistente en la nube.
           </p>
           <div className="d-flex flex-wrap">
-            {badgeProyectFlexit.map((value, key) => <div key={key} className="m-1"><Badge className="no-select-text rounded-pill badge bg-custom padding-badge scale pointer" description={value} /></div>)}
+            {badgeProyectFlexit.map((value, key) => <div key={key} className="m-1"><Fade delay={120 * key}><Badge className="no-select-text rounded-pill badge bg-custom padding-badge scale pointer" description={value} /></Fade></div>)}
           </div>
         </div>
       </CardProject>
