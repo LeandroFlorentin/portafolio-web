@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Tab from "../components/Tab/Tab.jsx";
 import Badge from "../components/Badge/Badge.jsx";
+import { Fade } from "react-awesome-reveal";
 const Habilidades = ({ reference }) => {
   const [activeTab, setActiveTab] = useState('front-end');
   let badgesFront = ["React.js", "JavaScript", "JQuery", "Redux", "Context", "Material UI", "Bootstrap", "Sass", "CSS3", "HTML5"];
@@ -18,35 +19,35 @@ const Habilidades = ({ reference }) => {
         <div className="p-2">
           <h5 className="f-20">Front-End</h5>
           <div className="d-flex flex-wrap gap-2 mt-3">
-            {badgesFront.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
+            {badgesFront.map((value, key) => (<div key={key}><Fade delay={120 * key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></Fade></div>))}
           </div>
         </div>
         <hr />
         <div className="p-2">
           <h5 className="f-20">Back-End</h5>
           <div className="d-flex flex-wrap gap-2 mt-3">
-            {badgesBack.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
+            {badgesBack.map((value, key) => (<div key={key}><Fade delay={120 * key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></Fade></div>))}
           </div>
         </div>
         <hr />
         <div className="p-2">
           <h5 className="f-20">AWS</h5>
           <div className="d-flex flex-wrap gap-2 mt-3 ">
-            {badgesAws.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
+            {badgesAws.map((value, key) => (<div key={key}><Fade delay={120 * key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></Fade></div>))}
           </div>
         </div>
         <hr />
         <div className="p-2" >
           <h5 className="f-20">Software</h5>
           <div className="d-flex flex-wrap gap-2 mt-3">
-            {badgesSoftwate.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
+            {badgesSoftwate.map((value, key) => (<div key={key}><Fade delay={120 * key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></Fade></div>))}
           </div>
         </div>
         <hr />
         <div className="p-2">
           <h5>Metodologías</h5>
           <div className="d-flex flex-wrap gap-2 mt-3">
-            {badgesMetodologias.map((value, key) => (<div key={key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></div>))}
+            {badgesMetodologias.map((value, key) => (<div key={key}><Fade delay={120 * key}><Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} /></Fade></div>))}
           </div>
         </div>
       </div>
