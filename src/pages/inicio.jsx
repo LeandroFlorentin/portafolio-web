@@ -6,19 +6,21 @@ import Sobremi from './sobremi.jsx';
 import Header from '../components/Header/header.jsx';
 import NavBarCelu from "../components/NavBarCelu/NavBarCelu.jsx";
 import { useMediaQuery } from "react-responsive";
-import { Fade, Flip, Hinge, JackInTheBox, Roll, Rotate, Slide, Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 function Inicio() {
   const media = useMediaQuery({ query: "(min-width:769px)" });
   const mediaLg = useMediaQuery({ query: "(min-width:1440px)" })
+  const mediaNav = useMediaQuery({ query: "(min-width:991px)" })
   const sobreMiRef = useRef(null);
   const habilidadesRef = useRef(null);
   const experienciaRef = useRef(null);
   const contactosRef = useRef(null);
   const [activeSection, setActiveSection] = useState('sobre mi');
   const scrollToRef = (ref) => {
+    let valor = mediaNav ? ref.current.offsetTop : ref.current.offsetTop - 65
     window.scrollTo({
-      top: ref.current.offsetTop,
+      top: valor,
       behavior: 'smooth'
     });
   };
