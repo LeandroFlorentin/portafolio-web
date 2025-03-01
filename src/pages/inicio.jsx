@@ -1,27 +1,29 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from "react";
 import Contacto from "./contacto.jsx";
 import Habilidades from "./habilidades.jsx";
 import Experiencia from "./experiencia.jsx";
-import Sobremi from './sobremi.jsx';
-import Header from '../components/Header/header.jsx';
+import Proyectos from "./proyectos.jsx";
+import Sobremi from "./sobremi.jsx";
+import Header from "../components/Header/header.jsx";
 import NavBarCelu from "../components/NavBarCelu/NavBarCelu.jsx";
 import { useMediaQuery } from "react-responsive";
 import { Fade } from "react-awesome-reveal";
 
 function Inicio() {
   const media = useMediaQuery({ query: "(min-width:769px)" });
-  const mediaLg = useMediaQuery({ query: "(min-width:1440px)" })
-  const mediaNav = useMediaQuery({ query: "(min-width:991px)" })
+  const mediaLg = useMediaQuery({ query: "(min-width:1440px)" });
+  const mediaNav = useMediaQuery({ query: "(min-width:991px)" });
   const sobreMiRef = useRef(null);
   const habilidadesRef = useRef(null);
   const experienciaRef = useRef(null);
   const contactosRef = useRef(null);
-  const [activeSection, setActiveSection] = useState('sobre mi');
+  const proyectosRef = useRef(null);
+  const [activeSection, setActiveSection] = useState("sobre mi");
   const scrollToRef = (ref) => {
-    let valor = mediaNav ? ref.current.offsetTop : ref.current.offsetTop - 65
+    let valor = mediaNav ? ref.current.offsetTop : ref.current.offsetTop - 65;
     window.scrollTo({
       top: valor,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
@@ -32,43 +34,76 @@ function Inicio() {
       const habilidadesOffset = habilidadesRef.current.offsetTop;
       const experienciaOffset = experienciaRef.current.offsetTop;
       const contactosOffset = contactosRef.current.offsetTop;
+      const proyectosOffset = proyectosRef.current.offsetTop;
       const scrollTop = window.scrollY;
       const windowHeight = window.innerHeight;
       const documentHeight = document.body.clientHeight;
       const bottomScrollPosition = scrollTop + windowHeight;
-      let activeSection = '';
+      let activeSection = "";
       if (scrollTop === 0 || bottomScrollPosition === documentHeight) {
-        activeSection = scrollTop === 0 ? 'sobre mi' : 'contacto';
+        activeSection = scrollTop === 0 ? "sobre mi" : "contacto";
       } else {
         if (scrollPosition < habilidadesOffset) {
-          activeSection = 'sobre mi';
+          activeSection = "sobre mi";
         } else if (scrollPosition < experienciaOffset) {
-          activeSection = 'habilidades';
+          activeSection = "habilidades";
+        } else if (scrollPosition < proyectosOffset) {
+          activeSection = "experiencia";
         } else if (scrollPosition < contactosOffset) {
-          activeSection = 'experiencia';
+          activeSection = "proyectos";
         } else {
-          activeSection = 'contacto';
+          activeSection = "contacto";
         }
       }
       setActiveSection(activeSection);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [activeSection]);
 
   return (
-    <div className='background-main g-0'>
-      <div className='d-block d-lg-none sticky-top'><NavBarCelu activate={activeSection} scrollToRef={scrollToRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} sobreMiRef={sobreMiRef} /></div>
-      <div className='left-6rem right-6rem row m-0 d-flex'>
-        <div className='top-6rem bottom-6rem col-5 d-lg-block d-none  h-100 navbar-sticky container-header'>
-          <Header activate={activeSection} setActivate={setActiveSection} scrollToRef={scrollToRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} sobreMiRef={sobreMiRef} />
+    <div className="background-main g-0">
+      <div className="d-block d-lg-none sticky-top">
+        <NavBarCelu
+          activate={activeSection}
+          scrollToRef={scrollToRef}
+          habilidadesRef={habilidadesRef}
+          experienciaRef={experienciaRef}
+          proyectosRef={proyectosRef}
+          contactosRef={contactosRef}
+          sobreMiRef={sobreMiRef}
+        />
+      </div>
+      <div className="left-6rem right-6rem row m-0 d-flex">
+        <div className="top-6rem bottom-6rem col-5 d-lg-block d-none  h-100 navbar-sticky container-header">
+          <Header
+            activate={activeSection}
+            setActivate={setActiveSection}
+            scrollToRef={scrollToRef}
+            habilidadesRef={habilidadesRef}
+            experienciaRef={experienciaRef}
+            proyectosRef={proyectosRef}
+            contactosRef={contactosRef}
+            sobreMiRef={sobreMiRef}
+          />
         </div>
-        <div className='top-6rem col-12 d-block d-lg-none h-auto container-header'>
-          <Header activate={activeSection} setActivate={setActiveSection} scrollToRef={scrollToRef} habilidadesRef={habilidadesRef} experienciaRef={experienciaRef} contactosRef={contactosRef} sobreMiRef={sobreMiRef} />
+        <div className="top-6rem col-12 d-block d-lg-none h-auto container-header">
+          <Header
+            activate={activeSection}
+            setActivate={setActiveSection}
+            scrollToRef={scrollToRef}
+            habilidadesRef={habilidadesRef}
+            experienciaRef={experienciaRef}
+            proyectosRef={proyectosRef}
+            contactosRef={contactosRef}
+            sobreMiRef={sobreMiRef}
+          />
         </div>
-        <main className={`${media ? "left-6rem" : ""} col-lg-7 col-12 col-md-12`}>
+        <main
+          className={`${media ? "left-6rem" : ""} col-lg-7 col-12 col-md-12`}
+        >
           <div className={!mediaLg ? "pt-5" : ""}>
             <Fade delay={200}>
               <Sobremi reference={sobreMiRef} />
@@ -86,12 +121,17 @@ function Inicio() {
           </div>
           <div className={mediaLg ? "pt-5" : ""}>
             <Fade delay={200}>
+              <Proyectos reference={proyectosRef} />
+            </Fade>
+          </div>
+          <div className={mediaLg ? "pt-5" : ""}>
+            <Fade delay={200}>
               <Contacto reference={contactosRef} />
             </Fade>
           </div>
         </main>
       </div>
-    </div >
+    </div>
   );
 }
 

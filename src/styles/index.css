@@ -1,9 +1,9 @@
 * {
   --opacity-bg: 1;
-  --color-parrafo: #94A3B8;
+  --color-parrafo: #94a3b8;
   --color-subtitulo-proyecto: rgb(100 116 139/1);
-  --color-standar: #E2E8F0;
-  --color-apagado-navbar: #64748B;
+  --color-standar: #e2e8f0;
+  --color-apagado-navbar: #64748b;
   --verde-fluor-fuerte: #5eead4;
   --verde-fluor-transparent: rgba(45, 212, 191, 0.102);
   padding: 0;
@@ -28,12 +28,12 @@
 
 @font-face {
   font-family: "Inter";
-  src: url(../fonts/InterTight-VariableFont_wght.ttf) format('truetype');
+  src: url(../fonts/InterTight-VariableFont_wght.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Inter-Itali";
-  src: url(../fonts/InterTight-Italic-VariableFont_wght.ttf) format('truetype');
+  src: url(../fonts/InterTight-Italic-VariableFont_wght.ttf) format("truetype");
 }
 
 .gilroy-semibold {
@@ -53,7 +53,7 @@ a {
 }
 
 .background-main {
-  background-color: #0f172a
+  background-color: #0f172a;
 }
 
 .background-btn {
@@ -63,7 +63,7 @@ a {
 
 .scale {
   transform: scale(1);
-  transition: .15s all ease-in-out;
+  transition: 0.15s all ease-in-out;
 }
 
 .scale:hover {
@@ -140,6 +140,20 @@ a {
   color: var(--verde-fluor-fuerte) !important;
 }
 
+.proyectos {
+  cursor: pointer;
+}
+
+.proyectos:hover .line {
+  width: 70px;
+  height: 1px;
+  background-color: var(--verde-fluor-fuerte);
+}
+
+.proyectos:hover .color-off {
+  color: var(--verde-fluor-fuerte) !important;
+}
+
 .contacto {
   cursor: pointer;
 }
@@ -158,7 +172,7 @@ a {
   width: 35px;
   height: 1px;
   background-color: var(--color-apagado-navbar);
-  transition: .16s all linear;
+  transition: 0.16s all linear;
 }
 
 .line-active {
@@ -197,7 +211,7 @@ a {
 }
 
 .f-navbar {
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
 .f-13 {
@@ -244,8 +258,8 @@ a {
   color: var(--verde-fluor-fuerte) !important;
   background-color: var(--verde-fluor-transparent) !important;
   border: 1px solid var(--verde-fluor-fuerte) !important;
-  opacity: .7;
-  transition: .5s all ease-in-out;
+  opacity: 0.7;
+  transition: 0.5s all ease-in-out;
 }
 
 .btn-custom:hover {
@@ -258,10 +272,10 @@ a {
 }
 
 .padding-badge {
-  padding-top: .50rem;
-  padding-bottom: .50rem;
-  padding-left: .75rem;
-  padding-right: .75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .nav-link:hover {
@@ -297,7 +311,7 @@ a {
 
 .hover-card {
   border: 1px solid transparent;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
 
 .hover-card:hover {
@@ -360,7 +374,7 @@ a {
 
 @media only screen and (max-width: 550px) {
   .f-navbar {
-    font-size: .5em;
+    font-size: 0.5em;
   }
 
   .left-6rem {
