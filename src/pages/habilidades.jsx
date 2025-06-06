@@ -4,8 +4,8 @@ import Badge from "../components/Badge/Badge.jsx";
 import { Fade } from "react-awesome-reveal";
 const Habilidades = ({ reference }) => {
   const [activeTab, setActiveTab] = useState("front-end");
-  let badgesFront = ["React.js", "JavaScript", "JQuery", "Redux", "Context", "Material UI", "Bootstrap", "Sass", "CSS3", "HTML5"];
-  let badgesBack = ["Node.js", "Express.js", "Jest", "JavaScript", "TypeScript", "Sequelize", "PostgreSQL", "MySQL", "SQLite", "Firebase"];
+  let badgesFront = ["React.js", "Vue.js", "JavaScript", "JQuery", "Redux", "Vuex", "Context", "Material UI", "PrimeVue", "Bootstrap", "Sass", "CSS3", "HTML5"];
+  let badgesBack = ["Node.js", "Express.js", "Jest", "JavaScript", "TypeScript", "Python", "FastAPI", "Sequelize", "PostgreSQL", "MySQL", "SQLite", "Firebase"];
   let badgesAws = ["EC2", "S3", "CloudFront", "Lambda", "SQS"];
   let badgesSoftwate = ["Docker", "Jenkins", "Git", "GitHub", "Bitbucket", "Visual Studio Code"];
   let badgesMetodologias = ["SCRUM"];
