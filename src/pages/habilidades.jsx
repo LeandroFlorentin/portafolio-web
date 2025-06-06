@@ -4,38 +4,11 @@ import Badge from "../components/Badge/Badge.jsx";
 import { Fade } from "react-awesome-reveal";
 const Habilidades = ({ reference }) => {
   const [activeTab, setActiveTab] = useState("front-end");
-  let badgesFront = [
-    "React.js",
-    "JavaScript",
-    "JQuery",
-    "Redux",
-    "Context",
-    "Material UI",
-    "Bootstrap",
-    "Sass",
-    "CSS3",
-    "HTML5",
-  ];
-  let badgesBack = [
-    "Node.js",
-    "Express.js",
-    "JavaScript",
-    "TypeScript",
-    "Sequelize",
-    "PostgreSQL",
-    "MySQL",
-    "SQLite",
-    "Firebase",
-  ];
+  let badgesFront = ["React.js", "JavaScript", "JQuery", "Redux", "Context", "Material UI", "Bootstrap", "Sass", "CSS3", "HTML5"];
+  let badgesBack = ["Node.js", "Express.js", "Jest", "JavaScript", "TypeScript", "Sequelize", "PostgreSQL", "MySQL", "SQLite", "Firebase"];
   let badgesAws = ["EC2", "S3", "CloudFront", "Lambda", "SQS"];
-  let badgesSoftwate = [
-    "Jenkins",
-    "Git",
-    "GitHub",
-    "Bitbucket",
-    "Visual Studio Code",
-  ];
-  let badgesMetodologias = ["Scrum"];
+  let badgesSoftwate = ["Docker", "Jenkins", "Git", "GitHub", "Bitbucket", "Visual Studio Code"];
+  let badgesMetodologias = ["SCRUM"];
   let tabs = [
     { name: "Front-end", funcion: handleTabClick, seteo: "front-end" },
     { name: "Back-end", funcion: handleTabClick, seteo: "back-end" },
@@ -55,10 +28,7 @@ const Habilidades = ({ reference }) => {
             {badgesFront.map((value, key) => (
               <div key={key}>
                 <Fade delay={120 * key}>
-                  <Badge
-                    className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer"
-                    description={value}
-                  />
+                  <Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} />
                 </Fade>
               </div>
             ))}
@@ -71,10 +41,7 @@ const Habilidades = ({ reference }) => {
             {badgesBack.map((value, key) => (
               <div key={key}>
                 <Fade delay={120 * key}>
-                  <Badge
-                    className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer"
-                    description={value}
-                  />
+                  <Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} />
                 </Fade>
               </div>
             ))}
@@ -87,10 +54,7 @@ const Habilidades = ({ reference }) => {
             {badgesAws.map((value, key) => (
               <div key={key}>
                 <Fade delay={120 * key}>
-                  <Badge
-                    className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer"
-                    description={value}
-                  />
+                  <Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} />
                 </Fade>
               </div>
             ))}
@@ -103,10 +67,7 @@ const Habilidades = ({ reference }) => {
             {badgesSoftwate.map((value, key) => (
               <div key={key}>
                 <Fade delay={120 * key}>
-                  <Badge
-                    className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer"
-                    description={value}
-                  />
+                  <Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} />
                 </Fade>
               </div>
             ))}
@@ -119,10 +80,7 @@ const Habilidades = ({ reference }) => {
             {badgesMetodologias.map((value, key) => (
               <div key={key}>
                 <Fade delay={120 * key}>
-                  <Badge
-                    className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer"
-                    description={value}
-                  />
+                  <Badge className="no-select-text badge rounded-pill bg-custom padding-badge scale pointer" description={value} />
                 </Fade>
               </div>
             ))}
